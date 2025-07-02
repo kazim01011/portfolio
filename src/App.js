@@ -5,7 +5,8 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills/Skills';
-import Blogs from './pages/Blogs';
+import About from './pages/About';
+import Publications from './pages/Publications'; // ⬅️ new import
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -23,9 +24,11 @@ function App() {
                 <Container sx={{ flex: 1, py: 3 }}>
                     <Routes>
                         <Route path="/portfolio" exact element={<Home />} />
+                        <Route path="/about" exact element={<About />} />
                         <Route path="/projects" exact element={<Projects />} />
-                        <Route path="/blogs" exact element={<Blogs />} />
+                        <Route path="/publications" exact element={<Publications />} /> {/* 🔄 Replaced Blogs */}
                         <Route path="/skills" exact element={<Skills />} />
+                        <Route path="/about" exact element={<About />} />
                     </Routes>
                 </Container>
                 <Footer />

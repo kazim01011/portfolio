@@ -6,7 +6,7 @@ import fastapiSklearn from "../images/fastapi_sklearn.png"
 const blogConfig = [
     {
         id: "blog-8",
-        title: "How to Solve Scheduling Problems in Python",
+        title: "How to Solve Scheduling Problems in Python KAZIM KHAN",
         links: [
             {
                 name: "article",

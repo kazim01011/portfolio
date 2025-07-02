@@ -5,114 +5,77 @@ import {ImBook} from "react-icons/im";
 import sklearnGenetic from "../images/sklearn_genetic_opt.png"
 import kafkaMl from "../images/kafkaml.png"
 import portfolio from "../images/portfolio.png"
-
+import multi_GNN_network from "../images/multi_GNN_network.png";
+import multiplex_energy from "../images/multiplex_energy.png";
+import string_normal_image from "../images/string_normal_image.png";
 import React from 'react'
 
 const projectConfig = [
     {
-        id: "project-5",
-        title: "Sklearn Genetic Opt",
+        id: "project-gnn-maintenance",
+        title: "Multilayer GNN for Predictive Maintenance",
         links: [
             {
-                name: "repo",
-                url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt",
-                icon: <AiFillGithub/>,
+                name: "paper",
+                url: "https://www.cell.com/iscience/home",
+                icon: <ImBook/>
             },
             {
                 name: "fork",
-                url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt/fork",
-                icon: <BiGitRepoForked/>,
+                url: "https://github.com/CEL-lab/Multilayer_GNN",
+                icon: <BiGitRepoForked/>
             },
             {
-                name: "subscription",
-                url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt/subscription",
-                icon: <AiFillEye/>,
-            },
-            {
-                name: "docs",
-                url: "https://sklearn-genetic-opt.readthedocs.io/en/stable/",
-                icon: <ImBook/>,
+                name: "code",
+                url: "https://github.com/CEL-lab/Multilayer_GNN",
+                icon: <AiFillGithub/>
             }
         ],
-        image: sklearnGenetic,
-        description: "scikit-learn models hyperparameters tuning and feature selection, using evolutionary algorithms.",
+        image: multi_GNN_network,
+        description: "Developed a novel GNN framework fusing GAT, GCN, and GIN layers for predictive maintenance using 7 years of power grid data. Achieved 30-day F1-score of 0.89, outperforming classical baselines. Clustering revealed high-risk substations for resilience planning.",
         target: "_blank"
-    },
-    {
-        id: "project-3",
-        title: "Kafkaml Anomalies",
+    }
+    ,{
+        id: "project-multiplex-energy",
+        title: "Navigability in Multiplex Energy Networks",
         links: [
             {
-                name: "repo",
-                url: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection",
+                name: "paper",
+                url: "https://arxiv.org/pdf/2503.14641",
+                icon: <ImBook/>
+            },
+            {
+                name: "code",
+                url: "https://github.com/CEL-lab/Link_Prediction_Multiplex",
                 icon: <AiFillGithub/>
             },
             {
                 name: "fork",
-                url: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection/fork",
+                url: "https://github.com/CEL-lab/Link_Prediction_Multiplex/fork",
                 icon: <BiGitRepoForked/>
-            },
-            {
-                name: "subscription",
-                url: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection/subscription",
-                icon: <AiFillEye/>
             }
         ],
-        image: kafkaMl,
-        description: "Project for real-time anomaly detection using kafka and python.",
+        image: multiplex_energy, // Replace with your image
+        description: "Analyzed Belgium’s energy network using five-layer multiplex models. Enhanced Jaccard & Adamic-Adar link prediction via exclusive neighbors. Studied network navigability under node failures with spectral analysis and random walk strategies.",
         target: "_blank"
     },
     {
         id: "project-2",
-        title: "Pyworkforce",
+        title: "GraphVax Explorer",
         links: [
             {
                 name: "repo",
-                url: "https://github.com/rodrigo-arenas/pyworkforce",
+                url: "https://github.com/CEL-lab/USDA_Protein/tree/main",
                 icon: <AiFillGithub/>
             },
             {
                 name: "fork",
-                url: "https://github.com/rodrigo-arenas/pyworkforce/fork",
+                url: "https://github.com/CEL-lab/USDA_Protein/tree/main",
                 icon: <BiGitRepoForked/>
-            },
-            {
-                name: "subscription",
-                url: "https://github.com/rodrigo-arenas/pyworkforce/subscription",
-                icon: <AiFillEye/>
-            },
-            {
-                name: "docs",
-                url: "https://pyworkforce.readthedocs.io/en/stable/",
-                icon: <ImBook/>,
             }
         ],
-        image: "https://miro.medium.com/max/1400/1*UDnhOFK35IbAPx15wkMgVg.jpeg",
-        description: "Standard tools for workforce management, queuing, scheduling, rostering and optimization problems.",
-        target: "_blank"
-    },
-    {
-        id: "project-1",
-        title: "Portfolio Web",
-        links: [
-            {
-                name: "repo",
-                url: "https://github.com/rodrigo-arenas/portfolio",
-                icon: <AiFillGithub/>
-            },
-            {
-                name: "fork",
-                url: "https://github.com/rodrigo-arenas/portfolio/fork",
-                icon: <BiGitRepoForked/>
-            },
-            {
-                name: "subscription",
-                url: "https://github.com/rodrigo-arenas/portfolio/subscription",
-                icon: <AiFillEye/>
-            }
-        ],
-        image: portfolio,
-        description: "Source code of my current portfolio web page as data scientist.",
+        image: string_normal_image,
+        description: "This project explores Graph Neural Networks (GNNs) for predicting novel protein-protein interactions (PPIs) using features from vaccine candidate analysis. We analyze whether these predicted links tend to connect proteins of similar or different priority classes (e.g., High–High vs. High–Low), especially among isolated proteins with no known STRING interactions.",
         target: "_blank"
     }
 ]

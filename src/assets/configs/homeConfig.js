@@ -2,80 +2,67 @@ import React from 'react'
 import {BsClipboardData} from "react-icons/bs";
 import {DiCodeigniter} from "react-icons/di";
 import {GiCommercialAirplane} from "react-icons/gi";
-import {FaMobileAlt} from "react-icons/fa";
+import {FaChalkboardTeacher} from "react-icons/fa";
 import { BiRocket } from "react-icons/bi";
+import { AiOutlineNodeIndex } from "react-icons/ai";
 
 const homeConfig = {
-
     greeting:
         <h1 className="heading">
-            Hi! I'm <strong className="main-name"> Rodrigo Arenas</strong>
+            Hi! I'm <strong className="main-name"> Muhammad Kazim</strong>
         </h1>,
+
     titles: [
-        "A Data Scientist",
-        "A Machine Learning Specialist",
-        "An Open Source Contributor",
-        "A Backend Developer",
-        "A Colombian"
+        "Ph.D. Candidate | AI & Energy Systems",
+        "Multidisciplinary Data Scientist",
+        "Graph Neural Network Researcher",
+        "Cybersecurity & Biomedical ML Enthusiast",
+        "Open Science Advocate"
     ],
+
     about: {
-        start: "I've been working for over nine years on data science projects. " +
-            "I'm excited by learning new things, contributing to the data science community," +
-            " and spreading the word of data!",
-        exit: "I'm fluent at Python, SQL databases, BI tools, and more, " +
-            "with a deep interest in machine learning."
+        start: "I am a Ph.D. candidate and data science researcher at North Dakota State University, exploring the intersection of AI, complex systems, and critical infrastructure. My core research applies multilayer network analysis and graph neural networks to enhance the resilience of energy systems.",
+        exit: "Beyond energy systems, I actively collaborate on machine learning applications in biomedical diagnostics and cybersecurity—integrating real-world data with cutting-edge AI models to solve high-impact societal problems."
     },
+
     workTimeline: [
         {
             id: "work-4",
-            title: "Sr ML Engineer",
-            company: "EPAM",
-            description: "Working to build scalable ML solutions, LLM's, and RAG architectures.",
-            date: "2023-Present",
-            icon: <BiRocket/>,
-            tags: ["ml", "mlops", "python", "azure", "llm", "automl"]
+            title: "Graduate Research Assistant",
+            company: "NDSU | AISustein Project",
+            description: "Lead research on graph-based learning for energy resilience, developing predictive maintenance systems using GNNs and analyzing multilayer energy networks from Belgium and Oklahoma datasets.",
+            date: "2023–Present",
+            icon: <BiRocket />,
+            tags: ["GNNs", "multilayer networks", "smart grids", "resilience", "AI"]
         },
         {
             id: "work-3",
-            title: "Sr Data Scientist",
-            company: "Globant",
-            description: "Build AutoML models and make them available to non-technical " +
-                "users from a graphical interface.",
-            date: "2021-2023",
-            icon: <DiCodeigniter/>,
-            tags: ["ml", "automl", "python", "docker", "redshift", "superset"]
+            title: "Graduate Teaching Assistant",
+            company: "NDSU Department of Computer Science",
+            description: "Taught and mentored students in CSCI 172 (Intermediate Visual Basic); guided practical projects and supported academic development.",
+            date: "2022–2023",
+            icon: <FaChalkboardTeacher />,
+            tags: ["teaching", "visual basic", "student support"]
         },
         {
             id: "work-2",
-            title: "BI Manager",
-            company: "Rappi",
-            description: "Leading a team of analysts and data scientists to execute different projects, " +
-                "including the construction of ETLs, data lakes, data warehouses, and machine learning models.",
-            date: "2019-2021",
-            icon: <FaMobileAlt/>,
-            tags: ["ml", "airflow", "python", "docker", "snowflake", "postgres", "azure"]
+            title: "Data Processing Supervisor",
+            company: "BISE Malakand",
+            description: "Managed student evaluation and payroll automation using Oracle PL/SQL and OMR technologies; improved efficiency for over 120+ employees.",
+            date: "2017–2022",
+            icon: <BsClipboardData />,
+            tags: ["oracle", "omr", "automation", "data pipelines"]
         },
         {
             id: "work-1",
-            title: "CRM Analytics Coordinator",
-            company: "Avianca",
-            description: "Tech leader of a BI, Data Science and DBA team. " +
-                "Build forecast models, data warehouse and Power BI dashboards.",
-            date: "2018-2019",
-            icon: <GiCommercialAirplane/>,
-            tags: ["ml", "mssql", "python", "docker", "pbi", "azure"]
-        },
-        {
-            id: "work-0",
-            title: "BI Analyst",
-            company: "Onelink BPO",
-            description: "Build interactive dashboards, ETLs and SQL queries to show the company KPIs.",
-            date: "2016-2018",
-            icon: <BsClipboardData/>,
-            tags: ["python", "mssql", "pbi", "excel"]
+            title: "Software Developer & E-Government Engineer",
+            company: "LGE&RDD, KP-IT Board, Softcrust Solutions",
+            description: "Engineered web-based citizen services and administrative tools using CodeIgniter, AngularJS, Oracle, and PHP. Contributed to digital transformation in the public sector.",
+            date: "2014–2017",
+            icon: <AiOutlineNodeIndex />,
+            tags: ["PHP", "CodeIgniter", "Oracle", "GovTech", "data systems"]
         }
     ]
 }
-
 
 export default homeConfig
