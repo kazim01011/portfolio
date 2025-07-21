@@ -33,7 +33,7 @@ const publicationsConfig = [
     title: "A Review on Multilayer Network Applications in Energy Systems",
     authors: "Muhammad Kazim, et al.",
     venue: "Applied Energy (Accepted)",
-    url: "https://www.sciencedirect.com/journal/applied-energy",
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S0306261925010876",
     image: paper3,
     tags: ["Survey", "Multilayer Networks", "Energy Modeling"],
     description: "A comprehensive review paper covering techniques, tools, and use cases of multilayer modeling for sustainable smart grids."
