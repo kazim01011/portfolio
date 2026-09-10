@@ -1,83 +1,55 @@
-import {BiGitRepoForked} from "react-icons/bi";
-import {AiFillGithub, AiFillEye} from "react-icons/ai";
-import {ImBook} from "react-icons/im";
-
-import sklearnGenetic from "../images/sklearn_genetic_opt.png"
-import kafkaMl from "../images/kafkaml.png"
-import portfolio from "../images/portfolio.png"
-import multi_GNN_network from "../images/multi_GNN_network.png";
-import multiplex_energy from "../images/multiplex_energy.png";
-import string_normal_image from "../images/string_normal_image.png";
-import React from 'react'
+import React from 'react';
+import { AiFillGithub } from 'react-icons/ai';
+import { ImBook } from 'react-icons/im';
+import multiGnn from '../images/multi_GNN_network.png';
+import multiplexEnergy from '../images/multiplex_energy.png';
+import graphVax from '../images/string_normal_image.png';
+import graphEmbeddings from '../images/graph_embeddings.png';
 
 const projectConfig = [
-    {
-        id: "project-gnn-maintenance",
-        title: "Multilayer GNN for Predictive Maintenance",
-        links: [
-            {
-                name: "paper",
-                url: "https://www.cell.com/iscience/home",
-                icon: <ImBook/>
-            },
-            {
-                name: "fork",
-                url: "https://github.com/CEL-lab/Multilayer_GNN",
-                icon: <BiGitRepoForked/>
-            },
-            {
-                name: "code",
-                url: "https://github.com/CEL-lab/Multilayer_GNN",
-                icon: <AiFillGithub/>
-            }
-        ],
-        image: multi_GNN_network,
-        description: "Developed a novel GNN framework fusing GAT, GCN, and GIN layers for predictive maintenance using 7 years of power grid data. Achieved 30-day F1-score of 0.89, outperforming classical baselines. Clustering revealed high-risk substations for resilience planning.",
-        target: "_blank"
-    }
-    ,{
-        id: "project-multiplex-energy",
-        title: "Navigability in Multiplex Energy Networks",
-        links: [
-            {
-                name: "paper",
-                url: "https://arxiv.org/pdf/2503.14641",
-                icon: <ImBook/>
-            },
-            {
-                name: "code",
-                url: "https://github.com/CEL-lab/Link_Prediction_Multiplex",
-                icon: <AiFillGithub/>
-            },
-            {
-                name: "fork",
-                url: "https://github.com/CEL-lab/Link_Prediction_Multiplex/fork",
-                icon: <BiGitRepoForked/>
-            }
-        ],
-        image: multiplex_energy, // Replace with your image
-        description: "Analyzed Belgium’s energy network using five-layer multiplex models. Enhanced Jaccard & Adamic-Adar link prediction via exclusive neighbors. Studied network navigability under node failures with spectral analysis and random walk strategies.",
-        target: "_blank"
-    },
-    {
-        id: "project-2",
-        title: "GraphVax Explorer",
-        links: [
-            {
-                name: "repo",
-                url: "https://github.com/CEL-lab/USDA_Protein/tree/main",
-                icon: <AiFillGithub/>
-            },
-            {
-                name: "fork",
-                url: "https://github.com/CEL-lab/USDA_Protein/tree/main",
-                icon: <BiGitRepoForked/>
-            }
-        ],
-        image: string_normal_image,
-        description: "This project explores Graph Neural Networks (GNNs) for predicting novel protein-protein interactions (PPIs) using features from vaccine candidate analysis. We analyze whether these predicted links tend to connect proteins of similar or different priority classes (e.g., High–High vs. High–Low), especially among isolated proteins with no known STRING interactions.",
-        target: "_blank"
-    }
-]
+  {
+    id: 'project-gnn-maintenance',
+    eyebrow: 'Energy AI',
+    title: 'Multilayer GNN for Predictive Maintenance',
+    description: 'A graph-learning framework that combines multiple GNN architectures to predict maintenance needs and identify vulnerable substations from seven years of real utility data.',
+    image: multiGnn,
+    links: [
+      { name: 'Repository', url: 'https://github.com/CEL-lab/Multilayer_GNN', icon: <AiFillGithub /> },
+      { name: 'Publication', url: 'https://www.cell.com/iscience/home', icon: <ImBook /> },
+    ],
+  },
+  {
+    id: 'project-explainable-grid',
+    eyebrow: 'Explainable AI',
+    title: 'Transmission Line Failure Prediction',
+    description: 'An edge-level explainable GNN approach using network-centric features to improve power-grid failure prediction and make risk signals easier to interpret.',
+    image: graphEmbeddings,
+    links: [
+      { name: 'Publication', url: 'https://doi.org/10.1016/j.segan.2025.101969', icon: <ImBook /> },
+    ],
+  },
+  {
+    id: 'project-multiplex-energy',
+    eyebrow: 'Network Science',
+    title: 'Multiplex Energy Network Resilience',
+    description: 'Multilayer models of coupled gas and electricity infrastructure used to study cascading failures, link prediction, and navigability under disruption.',
+    image: multiplexEnergy,
+    links: [
+      { name: 'Repository', url: 'https://github.com/CEL-lab/Link_Prediction_Multiplex', icon: <AiFillGithub /> },
+      { name: 'Publication', url: 'https://doi.org/10.1016/j.segan.2024.101407', icon: <ImBook /> },
+    ],
+  },
+  {
+    id: 'project-graphvax',
+    eyebrow: 'Biomedical AI',
+    title: 'Network-Integrated Reverse Vaccinology',
+    description: 'A USDA-supported framework combining Biomni-prioritized features and GNNs to identify vaccine candidates for Flavobacterium in aquaculture.',
+    image: graphVax,
+    links: [
+      { name: 'Repository', url: 'https://github.com/CEL-lab/USDA_Protein/tree/main', icon: <AiFillGithub /> },
+      { name: 'Preprint', url: 'https://doi.org/10.21203/rs.3.rs-8107499/v1', icon: <ImBook /> },
+    ],
+  },
+];
 
-export default projectConfig
+export default projectConfig;

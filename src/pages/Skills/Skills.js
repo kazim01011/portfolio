@@ -1,32 +1,25 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
-import SkillsItems from './SkillsItems';
 import skillsConfig from '../../assets/configs/skillsConfig';
 
-const Skills = () => {
-    return (
-        <section id="skills">
-            <Box sx={{ textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
-                <Typography variant="h3" component="h1" sx={{ color: '#263238', py: 2 }}>
-                    <strong>Main Skills & Tools</strong>
-                </Typography>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
-                        <SkillsItems config={skillsConfig.mainSkills} />
-                    </Box>
-
-            </Box>
-
-            <Box sx={{ textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
-                <Typography variant="h3" component="h1" sx={{ color: '#263238', py: 2 }}>
-                    <strong>Complementary Skills & Tools</strong>
-                </Typography>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
-                        <SkillsItems config={skillsConfig.complementarySkills} />
-                    </Box>
-            </Box>
-        </section>
-    );
-}
+const Skills = () => (
+  <section aria-labelledby="skills-title">
+    <header className="content-header">
+      <span className="eyebrow">Technical toolkit</span>
+      <h1 className="page-heading" id="skills-title">Skills & expertise</h1>
+      <p className="page-intro">A research-focused stack for graph learning, complex network analysis, scientific computing, and production-minded experimentation.</p>
+    </header>
+    <div className="skills-grid">
+      {skillsConfig.map((group) => (
+        <article className="skill-group glass-panel" key={group.id}>
+          <h2>{group.title}</h2>
+          <p>{group.description}</p>
+          <div className="skill-chips">
+            {group.skills.map((skill) => <span className="skill-chip" key={skill}>{skill}</span>)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+);
 
 export default Skills;
-

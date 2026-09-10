@@ -1,77 +1,21 @@
+# Muhammad Kazim — Research Portfolio
 
-<h2>
-  Personal Portfolio
-  <a href="https://rodrigo-arenas.github.io/portfolio" target="_blank">Website</a>
-</h2>
+Personal research portfolio for Muhammad Kazim, Ph.D., Visiting Faculty in the Department of Artificial Intelligence at the University of Malakand.
 
-This is my website to resume my work as a data scientist.
-The page mainly uses React and MUI and is inspired by open-source components.
+[View the live portfolio](https://kazim-portfolio.vercel.app)
 
-Feel free to use this project as a template, and please give a small credit by linking back to this project.
-If you found this project helpful, consider giving it a 
-[star](https://github.com/rodrigo-arenas/portfolio/stargazers) [⭐](https://github.com/rodrigo-arenas/portfolio/stargazers)
+## Focus
 
-**[Live Demo](https://rodrigo-arenas.github.io/portfolio/)**
+- AI for resilient and sustainable energy systems
+- Multilayer networks and graph neural networks
+- Predictive maintenance and critical infrastructure
+- Cybersecurity, digital forensics, and biomedical AI
 
-<img src="./src/assets/images/website.gif" alt="demo">
+## Local development
 
-
-## Installation Guide
-
-* Fork the project 
-  ```
-  https://github.com/rodrigo-arenas/portfolio/fork
-  ```
-* Clone your fork
-  ```
-  git clone https://github.com/{yourusername}/portfolio.git
-  ```
-* Install the packages
-  ```
-  npm install
-  ```
-* Start the project
-  ```
-  npm start
-  ```
-
-## Customize your information
-
-All the content (text, icons, links, etc.) are configured in the `assets` folders,
-it has two kinds:
-
-### Configs:
-
-There is one configuration file per page or main component, for example, if you want
-to modify the footer icons and hyperlinks, go to the footerConfig.js file
-
-![footer](src/assets/images/footer.png)
-
-Here, you can modify all the values but keep the key's names, structure, and className the same; 
-you can also add new values to the configs containing a list.
-
-
-### Images:
-
-This folder keeps images displayed over some routes, like blogs and projects.
-For example, inside the projectsConfig.js file, the list of projects has a property called "image":
-
-![projects_config.png](src/assets/images/projects_config.png)
-
-You can set any valid href for the `<a/>` tag as an image URL or, like in the above image, 
-an image from the `assets/images` folder.
-
-![projects_images](projects_images.png)
-
-
-### Set Google Analytics track (Optional):
-
-Take the `.env.example` file, put your tracking ID in the 
-variable `REACT_APP_TRACKING_ID`, and rename the file to `.env`
-
-## Troubleshooting
-
-If you see any error of unexpected token ">" while deploying, try to remove the following from the `package.json` file:
+```bash
+npm install
+npm start
 ```
-"homepage": "https://rodrigo-arenas.github.io/portfolio",
-```
+
+Create a production build with `npm run build`.

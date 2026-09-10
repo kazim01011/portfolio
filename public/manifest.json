@@ -1,6 +1,6 @@
 {
-  "short_name": "Rodrigo Arenas | Portfolio",
-  "name": "Rodrigo Arenas Data Science Portfolio",
+  "short_name": "Muhammad Kazim",
+  "name": "Muhammad Kazim, Ph.D. — Research Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#07111f",
+  "background_color": "#07111f"
 }

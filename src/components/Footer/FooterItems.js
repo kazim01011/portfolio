@@ -1,23 +1,15 @@
-import footerConfig from '../../assets/configs/footerConfig';
 import React from 'react';
-import { Box, IconButton } from '@mui/material';
+import { IconButton } from '@mui/material';
+import footerConfig from '../../assets/configs/footerConfig';
 
-const FooterItems = () => {
-    return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: 400, margin: '0 auto' }}>
-            {footerConfig.icons.map((item) => (
-                <IconButton
-                    href={item.url}
-                    key={item.id}
-                    sx={{ color: '#f5f5f5', padding: 2, '&:hover': { backgroundColor: '#276678' } }}
-                    target={item.target}
-                    rel="noopener noreferrer"
-                >
-                    {item.icon}
-                </IconButton>
-            ))}
-        </Box>
-    );
-}
+const FooterItems = () => (
+  <div className="footer-links">
+    {footerConfig.icons.map((item) => (
+      <IconButton href={item.url} key={item.id} aria-label={item.label} target={item.target} rel="noopener noreferrer" sx={{ color: '#b6c8d8', border: '1px solid rgba(148,183,214,.16)', '&:hover': { color: '#07111f', background: '#57d8ff' } }}>
+        {item.icon}
+      </IconButton>
+    ))}
+  </div>
+);
 
 export default FooterItems;

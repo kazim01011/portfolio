@@ -1,18 +1,18 @@
 import React from 'react';
-import { Grid } from '@mui/material';
 import CardItem from '../components/Cards/CardItem';
 import projectConfig from '../assets/configs/projectConfig';
 
-const Projects = () => {
-    return (
-        <Grid container spacing={6} justifyContent="center">
-            {projectConfig.map((item, index) => (
-                <Grid item key={index} xs={12} sm={6} md={4}>
-                    <CardItem item={item} />
-                </Grid>
-            ))}
-        </Grid>
-    );
-}
+const Projects = () => (
+  <section aria-labelledby="projects-title">
+    <header className="content-header">
+      <span className="eyebrow">Selected work</span>
+      <h1 className="page-heading" id="projects-title">Research projects</h1>
+      <p className="page-intro">Computational frameworks built for real-world questions across energy resilience, predictive maintenance, and vaccine discovery.</p>
+    </header>
+    <div className="project-grid">
+      {projectConfig.map((item) => <CardItem item={item} key={item.id} />)}
+    </div>
+  </section>
+);
 
 export default Projects;

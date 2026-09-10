@@ -1,34 +1,16 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
 import CardIcons from './CardIcons';
 
-const CardItem = (props) => {
-    return (
-        <Card sx={{ width: 380, height: 450, m: 2, backgroundColor: '#F6F6F6', boxShadow: 3, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-            <CardMedia
-                component="div"
-                sx={{
-                    backgroundImage: `url(${props.item.image})`,
-                    height: 220, // Increased height for the media
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                }}
-                alt={props.item.title}
-            />
-            <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 2 }}>
-                <Box sx={{ flexGrow: 1 }}>
-                    <Typography variant="h6" component="div" textAlign="center">
-                        <strong>{props.item.title}</strong>
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" textAlign="center" sx={{ mt: 1 }}>
-                        {props.item.description}
-                    </Typography>
-                </Box>
-                <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
-                <CardIcons item={props.item} sx={{ py: 0.3 }} />
-            </CardContent>
-        </Card>
-    );
-}
+const CardItem = ({ item }) => (
+  <article className="project-card glass-panel">
+    <div className="project-image" style={{ backgroundImage: `linear-gradient(rgba(3,12,22,.08), rgba(3,12,22,.3)), url(${item.image})` }} role="img" aria-label={`${item.title} visualization`} />
+    <div className="project-card-body">
+      <span className="eyebrow">{item.eyebrow}</span>
+      <h2>{item.title}</h2>
+      <p>{item.description}</p>
+      <CardIcons item={item} />
+    </div>
+  </article>
+);
 
 export default CardItem;
