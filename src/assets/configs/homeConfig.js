@@ -17,10 +17,10 @@ const homeConfig = {
       id: 'work-4',
       title: 'Graduate Research Assistant',
       company: 'NDSU | AISustein',
-      description: 'Developed multilayer network and graph neural network models for energy resilience, predictive maintenance, and fault propagation using Belgian infrastructure data and seven years of utility incidents.',
+      description: 'Developed multilayer network and graph neural network models for energy resilience, predictive maintenance, and fault propagation using Belgian infrastructure data, SAInt and MATLAB simulation workflows, and NDSU CCAST high-performance computing.',
       date: 'Jun 2023 - Aug 2025',
       icon: <BiNetworkChart />,
-      tags: ['GNNs', 'power grids', 'predictive maintenance'],
+      tags: ['GNNs', 'SAInt', 'MATLAB', 'CCAST HPC'],
     },
     {
       id: 'work-3',

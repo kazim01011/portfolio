@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom';
 import { AiOutlineArrowRight, AiOutlineDownload } from 'react-icons/ai';
 import Timeline from '../../components/Timeline/Timeline';
 import homeConfig from '../../assets/configs/homeConfig';
+import { researchPlatforms } from '../../assets/configs/skillsConfig';
 import KazimImg from '../../assets/images/Kazim.jpeg';
 import KazimCV from '../../assets/docs/Muhammad_Kazim_CV.pdf';
 
 const focusAreas = [
   ['AI for Energy Systems', 'Graph learning, predictive maintenance, and resilience modeling for smart grids.'],
   ['Network Science', 'Multilayer systems, link prediction, interdependencies, and cascading failure analysis.'],
+  ['IoT & Network Security', 'RPL-based low-power networks, attack simulation, and resilient routing analysis.'],
+  ['Sustainable Wireless Systems', 'Energy-aware 5G/B5G networks, intelligent resource allocation, and green communications.'],
   ['Biomedical AI', 'Network-integrated reverse vaccinology and protein interaction modeling.'],
-  ['Cybersecurity', 'Deepfake detection, digital forensics, privacy, and intelligent threat analysis.'],
+  ['Cybersecurity & Forensics', 'Deepfake detection, digital forensics, privacy, and intelligent threat analysis.'],
 ];
 
 const Home = () => (
@@ -20,7 +23,7 @@ const Home = () => (
       <div className="hero-copy">
         <span className="eyebrow">AI researcher & educator</span>
         <h1 id="hero-title">Muhammad<br /><span>Kazim, Ph.D.</span></h1>
-        <p className="hero-lead">I develop graph-based AI for resilient energy infrastructure and translate network science into practical tools for predictive maintenance, cybersecurity, and biomedical discovery.</p>
+        <p className="hero-lead">I develop graph-based AI for resilient energy infrastructure, low-power IoT networks, sustainable wireless systems, and biomedical discovery—combining simulation, high-performance computing, and real-world data.</p>
         <div className="hero-actions">
           <Button component={Link} to="/projects" variant="contained" endIcon={<AiOutlineArrowRight />} sx={{ px: 2.6, py: 1.25, color: '#04111f' }}>Explore research</Button>
           <Button component="a" href={KazimCV} download="Muhammad_Kazim_CV.pdf" variant="outlined" startIcon={<AiOutlineDownload />} sx={{ px: 2.6, py: 1.25 }}>Download CV</Button>
@@ -39,7 +42,28 @@ const Home = () => (
       <div className="metric"><strong>Ph.D.</strong><span>Conferred August 2025</span></div>
       <div className="metric"><strong>10</strong><span>Publications & preprints</span></div>
       <div className="metric"><strong>2</strong><span>Funded research programs</span></div>
-      <div className="metric"><strong>4</strong><span>Applied research domains</span></div>
+      <div className="metric"><strong>4</strong><span>Research simulation platforms</span></div>
+    </section>
+
+    <section className="platform-showcase glass-panel" aria-labelledby="platform-heading">
+      <header className="platform-showcase-head">
+        <div>
+          <span className="eyebrow">Featured capabilities</span>
+          <h2 className="platform-title" id="platform-heading">Simulation at infrastructure scale</h2>
+        </div>
+        <p>Hands-on research experience spanning integrated energy systems, low-power IoT networks, engineering analysis, and high-performance computing.</p>
+      </header>
+      <div className="platform-grid">
+        {researchPlatforms.map((platform, index) => (
+          <a className="platform-card" href={platform.url} target="_blank" rel="noreferrer" key={platform.id}>
+            <span className="platform-index">0{index + 1}</span>
+            <span className="platform-category">{platform.category}</span>
+            <h3>{platform.name}</h3>
+            <p>{platform.description}</p>
+            <span className="platform-link">Explore platform <span aria-hidden="true">↗</span></span>
+          </a>
+        ))}
+      </div>
     </section>
 
     <section aria-labelledby="focus-heading">
