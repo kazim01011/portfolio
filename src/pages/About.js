@@ -19,7 +19,7 @@ const About = () => (
           <img src={KazimImg} alt="Muhammad Kazim" />
           <div>
             <h2>Muhammad Kazim, Ph.D.</h2>
-            <p>I earned my Ph.D. in Industrial & Manufacturing Engineering from North Dakota State University in August 2025. My doctoral research developed multilayer network and graph neural network methods for resilient, sustainable energy systems. My work connects artificial intelligence, network science, and real-world engineering applications.</p>
+            <p>I earned my Ph.D. in <a href="https://www.ndsu.edu/industrial-manufacturing-systems-engineering" target="_blank" rel="noopener noreferrer">Industrial &amp; Manufacturing Engineering</a> from North Dakota State University in August 2025, under the supervision of my Ph.D. advisor, <a href="https://ce11.org/" target="_blank" rel="noopener noreferrer">Dr. Harun Pirim</a>. My doctoral research developed multilayer network and graph neural network methods for resilient, sustainable energy systems. My work connects artificial intelligence, network science, and real-world engineering applications.</p>
             <div className="hero-actions">
               <Button component="a" href={KazimCV} download="Kazim_Muhammad_CV.pdf" variant="contained" startIcon={<AiOutlineDownload />} sx={{ color: '#04111f' }}>Download CV</Button>
               <Button component="a" href="mailto:kazim01011@yahoo.com" variant="outlined" startIcon={<AiOutlineMail />}>Email me</Button>
