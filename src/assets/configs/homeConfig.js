@@ -16,8 +16,8 @@ const homeConfig = {
     {
       id: 'work-4',
       title: 'Graduate Research Assistant',
-      company: <>NDSU | <a href="https://www.aisustein.com/students" target="_blank" rel="noopener noreferrer">AISustein</a></>,
-      description: 'Developed multilayer network and graph neural network models for energy resilience, predictive maintenance, and fault propagation using Belgian infrastructure data, SAInt and MATLAB simulation workflows, and NDSU CCAST high-performance computing.',
+      company: 'Department of Industrial & Manufacturing Engineering, North Dakota State University',
+      description: <>Worked on the <a href="https://www.aisustein.com/students" target="_blank" rel="noopener noreferrer">AISustein project</a> under the supervision of <strong>Dr. Harun Pirim</strong> in the <a href="https://ce11.org/" target="_blank" rel="noopener noreferrer">Connect Elicit Learn (CEL) Lab</a>. Developed multilayer network and graph neural network models for energy resilience, predictive maintenance, and fault propagation using Belgian infrastructure data, SAInt and MATLAB simulation workflows, and NDSU CCAST high-performance computing.</>,
       date: 'Jun 2023 - Aug 2025',
       icon: <BiNetworkChart />,
       tags: ['GNNs', 'SAInt', 'MATLAB', 'CCAST HPC'],
