@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { AiOutlineDownload, AiOutlineMail } from 'react-icons/ai';
 import KazimImg from '../assets/images/Kazim.jpeg';
-import KazimCV from '../assets/docs/Muhammad_Kazim_CV.pdf';
+import KazimCV from '../assets/docs/Kazim_Muhammad_CV.pdf';
 import aboutConfig from '../assets/configs/aboutConfig';
 
 const About = () => (
@@ -19,9 +19,9 @@ const About = () => (
           <img src={KazimImg} alt="Muhammad Kazim" />
           <div>
             <h2>Muhammad Kazim, Ph.D.</h2>
-            <p>I earned my Ph.D. in Industrial & Manufacturing Engineering from North Dakota State University in August 2025. My doctoral research developed multilayer network and graph neural network methods for resilient, sustainable energy systems. I am now Visiting Faculty in the Department of Artificial Intelligence at the University of Malakand, where I teach and supervise research in intelligent systems and machine learning.</p>
+            <p>I earned my Ph.D. in Industrial & Manufacturing Engineering from North Dakota State University in August 2025. My doctoral research developed multilayer network and graph neural network methods for resilient, sustainable energy systems. My work connects artificial intelligence, network science, and real-world engineering applications.</p>
             <div className="hero-actions">
-              <Button component="a" href={KazimCV} download="Muhammad_Kazim_CV.pdf" variant="contained" startIcon={<AiOutlineDownload />} sx={{ color: '#04111f' }}>Download CV</Button>
+              <Button component="a" href={KazimCV} download="Kazim_Muhammad_CV.pdf" variant="contained" startIcon={<AiOutlineDownload />} sx={{ color: '#04111f' }}>Download CV</Button>
               <Button component="a" href="mailto:kazim01011@yahoo.com" variant="outlined" startIcon={<AiOutlineMail />}>Email me</Button>
             </div>
           </div>
@@ -44,7 +44,7 @@ const About = () => (
       <article className="section-card glass-panel">
         <h2>Funded research</h2>
         <ul className="detail-list">
-          <li><strong>AISustein: AI for Resilient Energy Infrastructure</strong><span>National Science Foundation · Graduate Research Assistant / Ph.D. Researcher · 2023-2025</span></li>
+          <li><strong><a href="https://www.aisustein.com/students" target="_blank" rel="noopener noreferrer">AISustein: AI for Resilient Energy Infrastructure</a></strong><span>National Science Foundation · Graduate Research Assistant / Ph.D. Researcher · 2023-2025</span></li>
           <li><strong>Network-Integrated Reverse Vaccinology for Flavobacterium</strong><span>U.S. Department of Agriculture · Graduate Research Assistant · Summer 2025</span></li>
         </ul>
       </article>

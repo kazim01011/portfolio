@@ -6,7 +6,7 @@ import Timeline from '../../components/Timeline/Timeline';
 import homeConfig from '../../assets/configs/homeConfig';
 import { researchPlatforms } from '../../assets/configs/skillsConfig';
 import KazimImg from '../../assets/images/Kazim.jpeg';
-import KazimCV from '../../assets/docs/Muhammad_Kazim_CV.pdf';
+import KazimCV from '../../assets/docs/Kazim_Muhammad_CV.pdf';
 
 const focusAreas = [
   ['AI for Energy Systems', 'Graph learning, predictive maintenance, and resilience modeling for smart grids.'],
@@ -26,14 +26,14 @@ const Home = () => (
         <p className="hero-lead">I develop graph-based AI for resilient energy infrastructure, low-power IoT networks, sustainable wireless systems, and biomedical discovery—combining simulation, high-performance computing, and real-world data.</p>
         <div className="hero-actions">
           <Button component={Link} to="/projects" variant="contained" endIcon={<AiOutlineArrowRight />} sx={{ px: 2.6, py: 1.25, color: '#04111f' }}>Explore research</Button>
-          <Button component="a" href={KazimCV} download="Muhammad_Kazim_CV.pdf" variant="outlined" startIcon={<AiOutlineDownload />} sx={{ px: 2.6, py: 1.25 }}>Download CV</Button>
+          <Button component="a" href={KazimCV} download="Kazim_Muhammad_CV.pdf" variant="outlined" startIcon={<AiOutlineDownload />} sx={{ px: 2.6, py: 1.25 }}>Download CV</Button>
         </div>
       </div>
       <div className="hero-photo-wrap">
         <img className="hero-photo" src={KazimImg} alt="Muhammad Kazim" />
         <div className="status-card">
-          <strong><span className="status-dot" />Visiting Faculty</strong>
-          <span>Department of Artificial Intelligence<br />University of Malakand</span>
+          <strong><span className="status-dot" />AI Researcher</strong>
+          <span>Graph learning<br />Resilient energy systems</span>
         </div>
       </div>
     </section>

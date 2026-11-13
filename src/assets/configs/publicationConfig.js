@@ -18,7 +18,7 @@ const publicationsConfig = [
     title: 'Multilayer GNN for Predictive Maintenance and Clustering in Power Grids',
     authors: 'Muhammad Kazim, Harun Pirim, Cong Le, Thuy Le, and Om Prakash Yadav',
     venue: 'iScience',
-    url: 'https://www.cell.com/iscience/home',
+    url: 'https://doi.org/10.1016/j.isci.2025.113490',
   },
   {
     id: 'pub-4', year: '2025', type: 'Journal article',
@@ -46,7 +46,7 @@ const publicationsConfig = [
     title: 'Link Prediction and Navigability of Multiplex Energy Networks',
     authors: 'Muhammad Kazim, Harun Pirim, et al.',
     venue: 'ASCE International Conference on Computing in Civil Engineering, July 28-31, 2024',
-    url: 'https://arxiv.org/abs/2503.14641',
+    url: 'https://doi.org/10.1061/9780784486139.044',
   },
   {
     id: 'pub-8', year: '2025', type: 'Under review',
