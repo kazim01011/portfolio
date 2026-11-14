@@ -24,6 +24,7 @@ const projectConfig = [
     publicationId: 'pub-4',
     image: publicationFigures['pub-4'].src,
     links: [
+      { name: 'Repository', url: 'https://github.com/CEL-lab/EdgeGNN', icon: <AiFillGithub /> },
       { name: 'Publication', url: 'https://doi.org/10.1016/j.segan.2025.101969', icon: <ImBook /> },
     ],
   },

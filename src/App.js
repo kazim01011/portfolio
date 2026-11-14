@@ -136,7 +136,7 @@ function App() {
                 const figure = publicationFigures[publication.id];
                 return <article className={`publication-item${figure ? '' : ' publication-text-only'}`} id={publication.id} key={publication.id}>
                   {figure && <PaperFigure figure={figure} title={publication.title} paperUrl={publication.url} />}
-                  <div><p className="publication-meta">{publication.venue} <ExternalLink href={publication.url}>[{publication.type === 'Under review' ? 'Preprint' : 'Paper'}]</ExternalLink></p><h4>{publication.title}</h4><p className="authors"><Authors text={publication.authors} /></p><p className="publication-status">{publication.type === 'Under review' ? 'Preprint · Under review' : publication.type}</p></div>
+                  <div><p className="publication-meta">{publication.venue} <ExternalLink href={publication.url}>[{publication.type === 'Under review' ? 'Preprint' : 'Paper'}]</ExternalLink>{publication.codeUrl && <> <ExternalLink href={publication.codeUrl} aria-label={`Code for ${publication.title}`}>[Code]</ExternalLink></>}</p><h4>{publication.title}</h4><p className="authors"><Authors text={publication.authors} /></p><p className="publication-status">{publication.type === 'Under review' ? 'Preprint · Under review' : publication.type}</p></div>
                 </article>;
               })}
             </React.Fragment>)}</div>

@@ -26,6 +26,7 @@ const publicationsConfig = [
     authors: 'Muhammad Kazim, Harun Pirim, Om Prakash Yadav, Cong Le, and Thuy Le',
     venue: 'Sustainable Energy, Grids and Networks',
     url: 'https://doi.org/10.1016/j.segan.2025.101969',
+    codeUrl: 'https://github.com/CEL-lab/EdgeGNN',
   },
   {
     id: 'pub-5', year: '2025', type: 'Journal article',
